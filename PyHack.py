@@ -28,7 +28,7 @@ def run_script(script_path):
     os.system(f'python3 {script_path}')
 
 def main():
-    dependencies = ["scapy", "argparse", "socket", "shlex", "subprocess", "sys", "textwrap", "threading"]
+    dependencies = ["scapy", "argparse"]
     all_installed = True
 
     if not check_pip():
