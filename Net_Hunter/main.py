@@ -5,7 +5,7 @@ import argparse
 #Input 
 def get_arguments():
     parser = argparse.ArgumentParser()
-    #parser.add_argument("-t", "--target", dest="target", help="IP range (and subnet)")
+    parser.add_argument("-t", "--target", dest="target", help="IP range (and subnet)")
     options = parser.parse_args()
     if not options.target:
         print('Input in the correct format: BASE_IP/SUBNET')
